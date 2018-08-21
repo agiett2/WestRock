@@ -1,0 +1,49 @@
+/* 
+  Allow angular.js to be loaded in body, hiding cloaked elements until 
+  templates compile.  The !important is important given that there may be 
+  other selectors that are more specific or come later and might alter display.  
+ */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+body {background-color: black}
+#jumbo { padding-top: 100px;}
+.modal-content > div {text-align: center}
+#btn {text-align: center}
+#subheading {text-align: center}
+#navul li:first-child{background-color: #eee}
+.homebtn { background-color: black}
+#main { padding-bottom: 10px}
+.heading { text-align: center}
+.footer { text-align: center; background-color: black; height: 100%; width: 100%; padding: 20px 0px; margin: 0; color:white}
+#header {float:inherit; font-family: sans-serif; font-size: 16px; text-align: center; }
+#vertical {transform: rotate(-90deg); 
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    height: 100px;  margin-right: 60px; padding-bottom:75px; padding-left: -80px; padding-top: 100px; font-family: sans-serif; font-size: 16px; position:absolute;  transform-origin:bottom;}
+/*Styling the table */
+#analysis { border: 1px solid black;}
+.table td, th {border: none !important; text-align: center !important}
+#header { display: block; width: auto; padding: 10px 0;}
+.firstRow td:nth-child(1){background-color: white; visibility: hidden !important}
+.tableBody td:nth-child(2){background-color: #f5f5f5}
+
+/*Creating boxing styling in the table*/
+.secondRow td:nth-child(3n+5){border-bottom: 1px solid black !important}
+.secondRow td:nth-child(2n+4){border-bottom: 1px solid black!important}
+.thirdRow td:nth-child(4){border-left:1px solid black !important}
+.thirdRow td:nth-child(6){border-right:1px solid black !important}
+.forthRow td:nth-child(4){border-left: 1px solid black !important}
+.forthRow td:nth-child(6){border-right: 1px solid black !important}
+.forthRow td:nth-child(3n+5){border: 1px solid black !important}
+.fithRow td:nth-child(4){border-left: 1px solid black !important}
+.fithRow td:nth-child(6){border-right: 1px solid black !important}
+.fithRow td:nth-child(2n+4){border-bottom: 1px solid black !important}
+.fithRow td:nth-child(3n+5){border-bottom: 1px solid black !important}
+.tablesBody td:nth-child(2n+4) {border-bottom: 1px solid black !important}
+.tablesBody td:nth-child(3n+5) {border-bottom: 1px solid black !important}
+.secondsRow  {border-bottom: 1px solid black !important}
+
+/*button affect when click on square 9.41*/
+.forthRow td:nth-child(3n+5):active{ transform: translateY(1px);box-shadow: 0 2px #666; !important}
+.forthRow td:nth-child(3n+5):hover{  border:1px solid black; cursor: pointer; !important}
